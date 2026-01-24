@@ -1,0 +1,113 @@
+2026-01-24 02:26:27,907 - INFO - Бот запущен и ожидает расписания...
+2026-01-24 02:27:14,143 - INFO - Бот запущен и ожидает расписания...
+2026-01-24 02:28:00,167 - INFO - --- ЗАПУСК ЦИКЛА ПАРСИНГА ---
+2026-01-24 02:28:00,436 - INFO - Собрано 0 потенциальных новостей
+2026-01-24 02:28:00,437 - INFO - --- ЦИКЛ ЗАВЕРШЕН. Опубликовано: 0 ---
+2026-01-24 02:28:10,826 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 128
+2026-01-24 02:28:10,828 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\util.py", line 97, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 10134, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\Wervoolf\Desktop\бот постер\bot.py", line 67, in send_status
+    bot.reply_to(message, status_text, parse_mode="Markdown")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 6347, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 1811, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        suggested_post_parameters=suggested_post_parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 128
+
+2026-01-24 02:30:23,423 - INFO - --- ЗАПУСК ЦИКЛА ---
+2026-01-24 02:30:23,772 - INFO - [Championat] Найдено сырых заголовков: 60
+2026-01-24 02:30:23,773 - INFO - После фильтрации осталось: 19
+2026-01-24 02:30:23,774 - INFO - Публикую: Тренер «Баварии» Компани: мои дети всегда видели, как я ругался в АПЛ.
+2026-01-24 02:30:24,670 - INFO - response: https://duckduckgo.com/?q=%D0%A2%D1%80%D0%B5%D0%BD%D0%B5%D1%80+%C2%AB%D0%91%D0%B0%D0%B2%D0%B0%D1%80%D0%B8%D0%B8%C2%BB+%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%3A+%D0%BC%D0%BE%D0%B8+%D0%B4%D0%B5%D1%82%D0%B8+%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BB%D0%B8%2C+%D0%BA%D0%B0%D0%BA+%D1%8F+%D1%80%D1%83%D0%B3%D0%B0%D0%BB%D1%81%D1%8F+%D0%B2+%D0%90%D0%9F%D0%9B.+football 200
+2026-01-24 02:30:26,231 - INFO - response: https://duckduckgo.com/i.js?o=json&q=%D0%A2%D1%80%D0%B5%D0%BD%D0%B5%D1%80+%C2%AB%D0%91%D0%B0%D0%B2%D0%B0%D1%80%D0%B8%D0%B8%C2%BB+%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%3A+%D0%BC%D0%BE%D0%B8+%D0%B4%D0%B5%D1%82%D0%B8+%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BB%D0%B8%2C+%D0%BA%D0%B0%D0%BA+%D1%8F+%D1%80%D1%83%D0%B3%D0%B0%D0%BB%D1%81%D1%8F+%D0%B2+%D0%90%D0%9F%D0%9B.+football&l=us-en&vqd=4-109960574587627607561896613213005997323&p=1&f=%2C%2C%2C%2C%2C 200
+2026-01-24 02:30:30,365 - INFO - Цикл завершен. Постов: 1
+2026-01-24 02:31:14,277 - INFO - --- ЗАПУСК ЦИКЛА ---
+2026-01-24 02:31:14,658 - INFO - [Championat] Найдено сырых заголовков: 60
+2026-01-24 02:31:14,659 - INFO - После фильтрации осталось: 17
+2026-01-24 02:31:14,659 - INFO - Публикую: Арбелоа: трансферы? У меня выдающийся состав, на случай проблем есть отличная молодёжка
+2026-01-24 02:31:15,512 - INFO - response: https://duckduckgo.com/?q=%D0%90%D1%80%D0%B1%D0%B5%D0%BB%D0%BE%D0%B0%3A+%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%B5%D1%80%D1%8B%3F+%D0%A3+%D0%BC%D0%B5%D0%BD%D1%8F+%D0%B2%D1%8B%D0%B4%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F+%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%2C+%D0%BD%D0%B0+%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9+%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC+%D0%B5%D1%81%D1%82%D1%8C+%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F+%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BA%D0%B0+football 200
+2026-01-24 02:31:16,484 - INFO - response: https://duckduckgo.com/i.js?o=json&q=%D0%90%D1%80%D0%B1%D0%B5%D0%BB%D0%BE%D0%B0%3A+%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%B5%D1%80%D1%8B%3F+%D0%A3+%D0%BC%D0%B5%D0%BD%D1%8F+%D0%B2%D1%8B%D0%B4%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F+%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%2C+%D0%BD%D0%B0+%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9+%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC+%D0%B5%D1%81%D1%82%D1%8C+%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F+%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BA%D0%B0+football&l=us-en&vqd=4-185683211406241032310024364080555395326&p=1&f=%2C%2C%2C%2C%2C 403
+2026-01-24 02:31:19,588 - INFO - Цикл завершен. Постов: 1
+2026-01-24 02:34:52,770 - INFO - Бот ХайЛайт Спорт запущен и готов к работе!
+2026-01-24 02:34:57,207 - INFO - === ЗАПУСК ЦИКЛА ПАРСИНГА ===
+2026-01-24 02:34:57,583 - INFO - Собрано новостей после фильтрации: 27
+2026-01-24 02:34:57,585 - INFO - Обработка статьи: «Он всегда тот, кто без мяча невероятен». Тренер «Ливерпуля» Слот — о Собослаи
+2026-01-24 02:34:58,057 - INFO - Успешно опубликовано: «Он всегда тот, кто без мяча невероятен». Тренер «Ливерпуля» Слот — о Собослаи
+2026-01-24 02:35:03,058 - INFO - Обработка статьи: Колыванов рассказал, где будет играть Саусь в составе «Спартака» в случае перехода
+2026-01-24 02:35:03,498 - INFO - Успешно опубликовано: Колыванов рассказал, где будет играть Саусь в составе «Спартака» в случае перехода
+2026-01-24 02:35:08,500 - INFO - === ЦИКЛ ЗАВЕРШЕН. Постов создано: 2 ===
+2026-01-24 02:36:06,373 - INFO - Бот ХайЛайт Спорт запущен и готов к работе!
+2026-01-24 02:38:11,569 - INFO - Бот ХайЛайт Спорт запущен!
+2026-01-24 02:38:19,596 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 360
+2026-01-24 02:38:19,599 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\util.py", line 97, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 10134, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\Wervoolf\Desktop\бот постер\bot.py", line 173, in send_welcome
+    bot.reply_to(message, help_text, parse_mode="Markdown")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 6347, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\__init__.py", line 1811, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        suggested_post_parameters=suggested_post_parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Wervoolf\AppData\Roaming\Python\Python314\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 360
+
+2026-01-24 02:38:58,436 - INFO - Бот ХайЛайт Спорт запущен!
+2026-01-24 02:39:29,289 - INFO - === ЗАПУСК ЦИКЛА ПАРСИНГА ===
+2026-01-24 02:39:29,653 - INFO - Обработка: «Интер» разгромил «Пизу», проигрывая 0:2 по ходу матча
+2026-01-24 02:39:35,810 - INFO - === ЦИКЛ ЗАВЕРШЕН ===
+2026-01-24 02:40:45,606 - INFO - Бот ХайЛайт Спорт запущен!
+2026-01-24 02:44:04,681 - INFO - Бот ХайЛайт Спорт запущен!
+2026-01-24 02:45:43,845 - INFO - Бот ХайЛайт Спорт запущен!
+2026-01-24 02:45:59,537 - INFO - === ЗАПУСК ЦИКЛА ПАРСИНГА ===
+2026-01-24 02:45:59,902 - INFO - Обработка: Антуан Гризманн пропустит воскресный матч «Атлетико» с «Мальоркой» из-за травмы
+2026-01-24 02:46:05,426 - INFO - === ЦИКЛ ЗАВЕРШЕН ===
