@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+requests
+beautifulsoup4
+duckduckgo_search
+schedule
+python-dotenv
