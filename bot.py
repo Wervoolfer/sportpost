@@ -194,11 +194,12 @@ def set_limit(message):
 import threading
 threading.Thread(target=bot.infinity_polling).start()
 
-schedule.every().day.at("08:30").do(job)
-schedule.every().day.at("20:00").do(job)
+schedule.every().day.at("05:30").do(job)
+schedule.every().day.at("17:00").do(job)
 
 logging.info("Бот ХайЛайт Спорт запущен!")
 
 while True:
     schedule.run_pending()
+
     time.sleep(1)
