@@ -11,8 +11,8 @@ import html
 from datetime import datetime
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CONFIG = {
-    "CHANNEL_ID": "@HighLihgt_Sport",
-    "ADMIN_IDS": [1069952782, 7932270010, 5893713874], 
+    "CHANNEL_ID": "@Hiort",
+    "ADMIN_IDS": [106782, 793210, 5893874], 
     "MAX_POSTS": 1,          
     "POSTED_FILE": "posted_news.json",
     "LOG_FILE": "bot_log.txt"
@@ -203,3 +203,4 @@ while True:
     schedule.run_pending()
 
     time.sleep(1)
+
